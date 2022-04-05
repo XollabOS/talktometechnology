@@ -1,0 +1,200 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  height: 100%;
+  width: 90%;
+  background-color:#093c43;
+  margin: 0 auto;
+  
+}
+
+h1{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+html{
+  color: black;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+h1, h2, h3{
+  text-align: center;
+}
+.container-1{
+  display: flex;
+  height:22vh;
+}
+
+.container-2{
+  display: flex;
+  height:22vh;
+}
+
+.container-3{
+  display: flex;
+  height:22vh;
+}
+
+.container-4{
+  display: flex;
+  height:22vh;
+}
+
+.container-5{
+  display: flex;
+  height:22vh;
+}
+
+.container-6{
+  display: flex;
+  height:22vh;
+}
+
+.container-7{
+  display: flex;
+  height:22vh;
+}
+
+.container-8{
+  display: flex;
+  height:15vh;
+}
+
+.container-1 div, .container-2 div, .container-3 div, .container-4 div, .container-5 div, .container-6 div, .container-7 div, 
+.container-8 div, button{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#box-1, #box-2, #box-3, #box-4, #box-5,#box-6, #box-7, #box-8, 
+#box-9 ,#box-10 ,#box-11 ,#box-12,#box-12, #box-13, #box-14, #box-15 ,#box-16 ,#box-17,
+#box-18 ,#box-19 ,#box-20 ,#box-21 ,#box-22 ,#box-23 , #box-24,
+#box-25, #box-26, #box-27, #box-28, #box-29, #box-30, #box-31, #box-32,
+#box-33, #box-34, #box-35, #box-36, #box-37, #box-38, #box-39, #box-40, #box-41, #box-42, #box-43, #box-44, #box-45, #box-46
+, #box-47, #box-48, #box-49, #box-50, #box-51, #box-52, #box-53, #box-54, #box-55, #box-56, #box-57, #box-58, #box-59, #box-60
+, #box-61, #box-62, #box-63, #box-64, #box-65, #box-66, #box-67, #box-68, #box-69, #box-70, #box-71, #box-72
+, #box-73, #box-74, #box-75, #box-76, #box-77, #box-78, #box-79, #box-80, #box-81, #box-82, #box-83, #box-84, button {
+  flex:1;
+  text-align: center;
+  border-radius:5px solid black;
+  
+}
+
+
+.yellow {
+  background-color: #edff00;
+  border-radius: 5px;
+}
+
+
+.purple{
+  background-color: #e60af5;
+}
+
+.skyBlue{
+  background-color: #0ef1d6;
+}
+
+
+.lightPink{
+  background-color: #fcaab4;
+  
+}
+
+.lightPurple{
+  background-color: #f985bb;
+}
+
+.darkPink{
+  background-color: #ff4167;
+}
+
+.lightGreen{
+  background-color: #59ff5b;
+}
+
+.darkGreen{
+  background-color: #00c503;
+}
+
+.red{
+  background-color: #ff1801;
+}
+
+.white{
+  background-color: white;
+}
+
+/*------------------images----------------------*/
+img{
+  height:8vh;
+  width:8vh;
+}
+
+/*-------typing input container and style----*/
+/*
+.keyboard{
+
+}
+*/
+form{
+flex:50%;
+}
+
+#run{
+flex:50%;
+background-color: #9d9a9a;
+color:white;
+}
+
+#keyboard{
+  width:83%;
+  margin-top: 2.5%;
+  margin-left: 1%;
+  border: 2px solid black
+}
+
+label{
+  font-size:25px;
+  font-weight: 700;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*--------keyboard input area styling----------*/
+
+.container-8 {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  border: solid black;
+
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES   
+/*********************************************/
+
