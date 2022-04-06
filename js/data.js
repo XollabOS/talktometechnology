@@ -590,8 +590,8 @@ let dataList = [
     {
       "id": "85",
       "title": "are",
-      "imageSrc": "Carry_33621.png",
+      "imageSrc": "transparent.svg",
       "imageAlt": "image showing carrying something with you",
-      "cssClass": "darkGreen"
+      "cssClass": "skyBlue"
     }
   ]

@@ -24,6 +24,7 @@ h1{
   color:white;
   font-style: italic;
   letter-spacing: 1px;
+  font-size: 3rem;
 }
 
 html{
@@ -118,6 +119,9 @@ img{
   flex-direction: column;
   text-align: center;
 }
+.customInputWrapper {
+  margin-top: 3rem;
+}
 #customInputLabel {
   color: white;
   font-size: 4rem;
@@ -134,7 +138,7 @@ img{
   font-size: 1.6rem;
   color: #555;
 }
-#submitText{
+#submitText, #addBtn{
   color: white;
   background: black;
   padding: 1rem;

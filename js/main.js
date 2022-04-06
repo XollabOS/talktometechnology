@@ -27,18 +27,26 @@ function MakeNewUtterance(boxNumber, utteranceWord, imgSrc, bgColor, altText) {
   }
   
   const synth = window.speechSynthesis;
-document.querySelector("#submitText").addEventListener("click", run);
 
-document.querySelector('#keyboard').addEventListener('keydown', e => {
-  if (e.keyCode == 13) {
-    e.preventDefault()
-    return run()
-  }
-});
+  // Code for click event to add tiles.  Just a test
 
-function run() {
-  const typeToTalk = document.querySelector("#keyboard").value;
-
+  // document.querySelector('#addBtn').addEventListener('click', () => {
+  //   let insertWord = document.querySelector("#keyboard").value;
+  //   new MakeNewUtterance(insertWord, insertWord, 'plastic_bag.svg', 'darkGreen')
+  // })
+  
+  document.querySelector("#submitText").addEventListener("click", run)
+  
+  document.querySelector('#keyboard').addEventListener('keydown', e => {
+    if (e.keyCode == 13) {
+      e.preventDefault()
+      return run()
+    }
+  });
+  
+  function run() {
+    
+    const typeToTalk = document.querySelector("#keyboard").value;
   const yellText = `${typeToTalk}`;
 
   document.querySelector("#keyboard").innerText = yellText;
