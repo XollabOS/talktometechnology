@@ -92,9 +92,12 @@ h1, h2, h3{
 , #box-47, #box-48, #box-49, #box-50, #box-51, #box-52, #box-53, #box-54, #box-55, #box-56, #box-57, #box-58, #box-59, #box-60
 , #box-61, #box-62, #box-63, #box-64, #box-65, #box-66, #box-67, #box-68, #box-69, #box-70, #box-71, #box-72
 , #box-73, #box-74, #box-75, #box-76, #box-77, #box-78, #box-79, #box-80, #box-81, #box-82, #box-83, #box-84, button {
-  flex:1;
+  /* flex:1; */
   text-align: center;
   border-radius:5px solid black;
+  width: 10%;
+  height: 7.5rem;
+
   
 }
 
@@ -196,5 +199,15 @@ label{
 
 /******************************************
 /* ADDITIONAL STYLES   
-/*********************************************/
+/********************************************
 
+
+
+
+
+/* TEST CODE */
+
+#mainContainer{
+  display: flex;
+  flex-wrap: wrap;
+}

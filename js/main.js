@@ -7,12 +7,18 @@ function MakeNewUtterance(boxNumber, utteranceWord) {
     } else {
       // start new utterance
       const utterance = new SpeechSynthesisUtterance(utteranceWord);
-
+      
       this.synth1.speak(utterance);
-    }
+    };
   };
+  
+  let boxSpitter = "<button id='box-" + boxNumber + "'><h2>" + utteranceWord + "</h2></button>";
+  document.getElementById('mainContainer').insertAdjacentHTML("beforeend", boxSpitter);
+  //  "<button id='box-" + boxNumber + "'></button>";
+   
   let box = document.querySelector("#box-" + boxNumber);
   box.addEventListener("click", this.sayWord.bind(this));
+
 }
 
 let wordList = [
@@ -107,17 +113,17 @@ for (let i = 0; i < wordList.length; i++) {
   x = new MakeNewUtterance(i + 1, wordList[i]);
 }
 
-const synth = window.speechSynthesis;
-document.querySelector("#run").addEventListener("click", run);
+// const synth = window.speechSynthesis;
+// document.querySelector("#run").addEventListener("click", run);
 
-function run() {
-  const typeToTalk = document.querySelector("#keyboard").value;
+// function run() {
+//   const typeToTalk = document.querySelector("#keyboard").value;
 
-  const yellText = `${typeToTalk}`;
+//   const yellText = `${typeToTalk}`;
 
-  document.querySelector("#placeToYell").innerText = yellText;
+//   document.querySelector("#placeToYell").innerText = yellText;
 
-  let yellThis = new SpeechSynthesisUtterance(yellText);
+//   let yellThis = new SpeechSynthesisUtterance(yellText);
 
-  synth.speak(yellThis);
-}
+//   synth.speak(yellThis);
+// }
