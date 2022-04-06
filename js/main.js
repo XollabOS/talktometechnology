@@ -26,3 +26,17 @@ function MakeNewUtterance(boxNumber, utteranceWord, imgSrc, bgColor, altText) {
     x = new MakeNewUtterance(dataList[i].id + 1, dataList[i].title, dataList[i].imageSrc, dataList[i].cssClass, dataList[i].imageAlt);
   }
   
+  const synth = window.speechSynthesis;
+document.querySelector("#run").addEventListener("click", run);
+
+function run() {
+  const typeToTalk = document.querySelector("#keyboard").value;
+
+  const yellText = `${typeToTalk}`;
+
+  document.querySelector("#placeToYell").innerText = yellText;
+
+  let yellThis = new SpeechSynthesisUtterance(yellText);
+
+  synth.speak(yellThis);
+}
