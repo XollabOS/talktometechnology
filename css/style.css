@@ -95,8 +95,8 @@ h1, h2, h3{
   /* flex:1; */
   text-align: center;
   border-radius:5px solid black;
-  width: 10%;
-  height: 7.5rem;
+  flex-basis: 10%;
+  height: 10rem;
 
   
 }
