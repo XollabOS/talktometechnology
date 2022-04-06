@@ -1,18 +1,46 @@
 let dataList = [
-    {
-      "id": "1",
-      "title": "I",
-      "imageSrc": "I_23542.png",
-      "imageAlt": "picture pointing at self",
-      "cssClass": "yellow"
-    },
-    {
-      "id": "2",
-      "title": "me",
-      "imageSrc": "face_15743.png",
-      "imageAlt": "picture of person",
-      "cssClass": "yellow"
-    },
+  {
+    "id": "1",
+    "title": "I",
+    "imageSrc": "I_23542.png",
+    "imageAlt": "picture pointing at self",
+    "cssClass": "yellow"
+  },
+  {
+    "id": "2",
+    "title": "me",
+    "imageSrc": "face_15743.png",
+    "imageAlt": "picture of person",
+    "cssClass": "yellow"
+  },
+  {
+    "id": "13",
+    "title": "my",
+    "imageSrc": "self%20esteem_19219.png",
+    "imageAlt": "someone thinking about their stuff",
+    "cssClass": "yellow"
+  },
+  {
+    "id": "25",
+    "title": "it",
+    "imageSrc": "It_23474.png",
+    "imageAlt": "arrows pointing at an item",
+    "cssClass": "yellow"
+  },
+  {
+    "id": "49",
+    "title": "your",
+    "imageSrc": "Your%20Turn!_47716.png",
+    "imageAlt": "pointing at someone for your",
+    "cssClass": "yellow"
+  },
+  {
+    "id": "37",
+    "title": "you",
+    "imageSrc": "Point_36483.png",
+    "imageAlt": "pointing at person",
+    "cssClass": "yellow"
+  },
     {
       "id": "3",
       "title": "how",
@@ -35,11 +63,137 @@ let dataList = [
       "cssClass": "purple"
     },
     {
+      "id": "73",
+      "title": "yes",
+      "imageSrc": "yes_17011.png",
+      "imageAlt": "green check mark",
+      "cssClass": "white"
+    },
+    {
+      "id": "74",
+      "title": "no\n\t\t",
+      "imageSrc": "no_16959.png",
+      "imageAlt": "red x mark",
+      "cssClass": "red"
+    },
+    {
       "id": "6",
       "title": "again",
       "imageSrc": "again_47245.png",
       "imageAlt": "picture showing a loop going around again",
       "cssClass": "skyBlue"
+    },
+    {
+      "id": "9",
+      "title": "problem",
+      "imageSrc": "problem_23791.png",
+      "imageAlt": "someone showing they have a problem",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "35",
+      "title": "and",
+      "imageSrc": "and_47645.svg",
+      "imageAlt": "the word and",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "46",
+      "title": "all",
+      "imageSrc": "Everything_27600.png",
+      "imageAlt": "pointing at all the shapes",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "47",
+      "title": "at",
+      "imageSrc": "At%20Sign_36289.png",
+      "imageAlt": "at sign",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "48",
+      "title": "some",
+      "imageSrc": "Some_47563.svg",
+      "imageAlt": "showing some of something and not all of it",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "59",
+      "title": "for",
+      "imageSrc": "for_47639.png",
+      "imageAlt": "word for",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "60",
+      "title": "on",
+      "imageSrc": "Green%20Circle_43665.png",
+      "imageAlt": "green on button",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "61",
+      "title": "here",
+      "imageSrc": "Arrow%20down_44351.png",
+      "imageAlt": "arrow pointing down",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "70",
+      "title": "in",
+      "imageSrc": "in_17714.png",
+      "imageAlt": "arrow pointing into a box",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "71",
+      "title": "up",
+      "imageSrc": "Arrow%20up_44348.png",
+      "imageAlt": "arrow pointing up",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "72",
+      "title": "off",
+      "imageSrc": "Red%20Circle_43662.png",
+      "imageAlt": "red off button",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "82",
+      "title": "out",
+      "imageSrc": "Garbage%20Bag%20Out_40186.png",
+      "imageAlt": "garbage bag being taken out",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "83",
+      "title": "down",
+      "imageSrc": "Down%20Arrow_38048.png",
+      "imageAlt": "arrow pointing down",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "84",
+      "title": "with",
+      "imageSrc": "Carry_33621.png",
+      "imageAlt": "image showing carrying something with you",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "85",
+      "title": "are",
+      "imageSrc": "transparent.svg",
+      "imageAlt": "image showing carrying something with you",
+      "cssClass": "skyBlue"
+    },
+    {
+      "id": "10",
+      "title": "now",
+      "imageSrc": "now_44934.png",
+      "imageAlt": "clock showing time is now",
+      "cssClass": "lightPurple"
     },
     {
       "id": "7",
@@ -56,81 +210,11 @@ let dataList = [
       "cssClass": "lightPink"
     },
     {
-      "id": "9",
-      "title": "problem",
-      "imageSrc": "problem_23791.png",
-      "imageAlt": "someone showing they have a problem",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "10",
-      "title": "now",
-      "imageSrc": "now_44934.png",
-      "imageAlt": "clock showing time is now",
-      "cssClass": "lightPurple"
-    },
-    {
-      "id": "11",
-      "title": "bad",
-      "imageSrc": "bad_16939.png",
-      "imageAlt": "picture of a thumb pointing down",
-      "cssClass": "darkPink"
-    },
-    {
-      "id": "12",
-      "title": "good",
-      "imageSrc": "Thumbs%20Up_41001.svg",
-      "imageAlt": "picture of a thumb pointing up",
-      "cssClass": "darkPink"
-    },
-    {
-      "id": "13",
-      "title": "my",
-      "imageSrc": "self%20esteem_19219.png",
-      "imageAlt": "someone thinking about their stuff",
-      "cssClass": "yellow"
-    },
-    {
-      "id": "14",
-      "title": "am",
-      "imageSrc": "I%20am%20fine_15187.png",
-      "imageAlt": "I am fine drawing",
-      "cssClass": "lightGreen"
-    },
-    {
       "id": "15",
       "title": "to",
       "imageSrc": "to_17721.png",
       "imageAlt": "box showing arrow to",
       "cssClass": "lightPink"
-    },
-    {
-      "id": "16",
-      "title": "be",
-      "imageSrc": "be_46567.png",
-      "imageAlt": "picture pointing at self",
-      "cssClass": "darkGreen"
-    },
-    {
-      "id": "17",
-      "title": "feel",
-      "imageSrc": "feelings_15127.png",
-      "imageAlt": "faces showing feelings",
-      "cssClass": "darkGreen"
-    },
-    {
-      "id": "18",
-      "title": "give",
-      "imageSrc": "give_21931.png",
-      "imageAlt": "showing someone giving someone a ball",
-      "cssClass": "darkGreen"
-    },
-    {
-      "id": "19",
-      "title": "listen",
-      "imageSrc": "listen%20to%20music_22609.png",
-      "imageAlt": "someone listening to music",
-      "cssClass": "darkGreen"
     },
     {
       "id": "20",
@@ -161,6 +245,34 @@ let dataList = [
       "cssClass": "lightPink"
     },
     {
+      "id": "32",
+      "title": "that",
+      "imageSrc": "head_15732.png",
+      "imageAlt": "arrow pointing at head",
+      "cssClass": "lightPink"
+    },
+    {
+      "id": "33",
+      "title": "a",
+      "imageSrc": "a_16046.png",
+      "imageAlt": "the letter a",
+      "cssClass": "lightPink"
+    },
+    {
+      "id": "34",
+      "title": "the",
+      "imageSrc": "the_47642.svg",
+      "imageAlt": "the word the",
+      "cssClass": "lightPink"
+    },
+    {
+      "id": "36",
+      "title": "more",
+      "imageSrc": "Add%20Button_44228.svg",
+      "imageAlt": "add button",
+      "cssClass": "lightPink"
+    },
+    {
       "id": "24",
       "title": "cool",
       "imageSrc": "ice_17807.png",
@@ -168,11 +280,39 @@ let dataList = [
       "cssClass": "lightPink"
     },
     {
-      "id": "25",
-      "title": "it",
-      "imageSrc": "It_23474.png",
-      "imageAlt": "arrows pointing at an item",
-      "cssClass": "yellow"
+      "id": "57",
+      "title": "first",
+      "imageSrc": "first_23704.png",
+      "imageAlt": "showing someone standing first in line",
+      "cssClass": "lightPink"
+    },
+    {
+      "id": "58",
+      "title": "then",
+      "imageSrc": "Think%20Then%20Do_37833.png",
+      "imageAlt": "think then do",
+      "cssClass": "lightPink"
+    },
+    {
+      "id": "11",
+      "title": "bad",
+      "imageSrc": "bad_16939.png",
+      "imageAlt": "picture of a thumb pointing down",
+      "cssClass": "darkPink"
+    },
+    {
+      "id": "12",
+      "title": "good",
+      "imageSrc": "Thumbs%20Up_41001.svg",
+      "imageAlt": "picture of a thumb pointing up",
+      "cssClass": "darkPink"
+    },
+    {
+      "id": "14",
+      "title": "am",
+      "imageSrc": "I%20am%20fine_15187.png",
+      "imageAlt": "I am fine drawing",
+      "cssClass": "lightGreen"
     },
     {
       "id": "26",
@@ -187,6 +327,62 @@ let dataList = [
       "imageSrc": "White%20Question%20Mark_43583.svg",
       "imageAlt": "white question mark",
       "cssClass": "lightGreen"
+    },
+    {
+      "id": "50",
+      "title": "do",
+      "imageSrc": "Do_26106.png",
+      "imageAlt": "list of stuff to do",
+      "cssClass": "lightGreen"
+    },
+    {
+      "id": "38",
+      "title": "can",
+      "imageSrc": "Question_32387.png",
+      "imageAlt": "question thought bubble",
+      "cssClass": "lightGreen"
+    },
+    {
+      "id": "62",
+      "title": "have",
+      "imageSrc": "have_17947.png",
+      "imageAlt": "red ball in someones hand",
+      "cssClass": "lightGreen"
+    },
+    {
+      "id": "69",
+      "title": "wait",
+      "imageSrc": "stop_17875.png",
+      "imageAlt": "someone holding their hand up in a stop position",
+      "cssClass": "lightGreen"
+    },
+    {
+      "id": "16",
+      "title": "be",
+      "imageSrc": "be_46567.png",
+      "imageAlt": "picture pointing at self",
+      "cssClass": "darkGreen"
+    },
+    {
+      "id": "17",
+      "title": "feel",
+      "imageSrc": "feelings_15127.png",
+      "imageAlt": "faces showing feelings",
+      "cssClass": "darkGreen"
+    },
+    {
+      "id": "18",
+      "title": "give",
+      "imageSrc": "give_21931.png",
+      "imageAlt": "showing someone giving someone a ball",
+      "cssClass": "darkGreen"
+    },
+    {
+      "id": "19",
+      "title": "listen",
+      "imageSrc": "listen%20to%20music_22609.png",
+      "imageAlt": "someone listening to music",
+      "cssClass": "darkGreen"
     },
     {
       "id": "28",
@@ -215,55 +411,6 @@ let dataList = [
       "imageSrc": "know_19512.png",
       "imageAlt": "someone raising their hand in class",
       "cssClass": "darkGreen"
-    },
-    {
-      "id": "32",
-      "title": "that",
-      "imageSrc": "head_15732.png",
-      "imageAlt": "arrow pointing at head",
-      "cssClass": "lightPink"
-    },
-    {
-      "id": "33",
-      "title": "a",
-      "imageSrc": "a_16046.png",
-      "imageAlt": "the letter a",
-      "cssClass": "lightPink"
-    },
-    {
-      "id": "34",
-      "title": "the",
-      "imageSrc": "the_47642.svg",
-      "imageAlt": "the word the",
-      "cssClass": "lightPink"
-    },
-    {
-      "id": "35",
-      "title": "and",
-      "imageSrc": "and_47645.svg",
-      "imageAlt": "the word and",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "36",
-      "title": "more",
-      "imageSrc": "Add%20Button_44228.svg",
-      "imageAlt": "add button",
-      "cssClass": "lightPink"
-    },
-    {
-      "id": "37",
-      "title": "you",
-      "imageSrc": "Point_36483.png",
-      "imageAlt": "pointing at person",
-      "cssClass": "yellow"
-    },
-    {
-      "id": "38",
-      "title": "can",
-      "imageSrc": "Question_32387.png",
-      "imageAlt": "question thought bubble",
-      "cssClass": "lightGreen"
     },
     {
       "id": "39",
@@ -315,41 +462,6 @@ let dataList = [
       "cssClass": "darkGreen"
     },
     {
-      "id": "46",
-      "title": "all",
-      "imageSrc": "Everything_27600.png",
-      "imageAlt": "pointing at all the shapes",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "47",
-      "title": "at",
-      "imageSrc": "At%20Sign_36289.png",
-      "imageAlt": "at sign",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "48",
-      "title": "some",
-      "imageSrc": "Some_47563.svg",
-      "imageAlt": "showing some of something and not all of it",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "49",
-      "title": "your",
-      "imageSrc": "Your%20Turn!_47716.png",
-      "imageAlt": "pointing at someone for your",
-      "cssClass": "yellow"
-    },
-    {
-      "id": "50",
-      "title": "do",
-      "imageSrc": "Do_26106.png",
-      "imageAlt": "list of stuff to do",
-      "cssClass": "lightGreen"
-    },
-    {
       "id": "51",
       "title": "go",
       "imageSrc": "Go_26054.png",
@@ -392,48 +504,6 @@ let dataList = [
       "cssClass": "darkGreen"
     },
     {
-      "id": "57",
-      "title": "first",
-      "imageSrc": "first_23704.png",
-      "imageAlt": "showing someone standing first in line",
-      "cssClass": "lightPink"
-    },
-    {
-      "id": "58",
-      "title": "then",
-      "imageSrc": "Think%20Then%20Do_37833.png",
-      "imageAlt": "think then do",
-      "cssClass": "lightPink"
-    },
-    {
-      "id": "59",
-      "title": "for",
-      "imageSrc": "for_47639.png",
-      "imageAlt": "word for",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "60",
-      "title": "on",
-      "imageSrc": "Green%20Circle_43665.png",
-      "imageAlt": "green on button",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "61",
-      "title": "here",
-      "imageSrc": "Arrow%20down_44351.png",
-      "imageAlt": "arrow pointing down",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "62",
-      "title": "have",
-      "imageSrc": "have_17947.png",
-      "imageAlt": "red ball in someones hand",
-      "cssClass": "lightGreen"
-    },
-    {
       "id": "63",
       "title": "like",
       "imageSrc": "like_19945.png",
@@ -474,48 +544,6 @@ let dataList = [
       "imageSrc": "show_14528.png",
       "imageAlt": "showing off a ball",
       "cssClass": "darkGreen"
-    },
-    {
-      "id": "69",
-      "title": "wait",
-      "imageSrc": "stop_17875.png",
-      "imageAlt": "someone holding their hand up in a stop position",
-      "cssClass": "lightGreen"
-    },
-    {
-      "id": "70",
-      "title": "in",
-      "imageSrc": "in_17714.png",
-      "imageAlt": "arrow pointing into a box",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "71",
-      "title": "up",
-      "imageSrc": "Arrow%20up_44348.png",
-      "imageAlt": "arrow pointing up",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "72",
-      "title": "off",
-      "imageSrc": "Red%20Circle_43662.png",
-      "imageAlt": "red off button",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "73",
-      "title": "yes",
-      "imageSrc": "yes_17011.png",
-      "imageAlt": "green check mark",
-      "cssClass": "white"
-    },
-    {
-      "id": "74",
-      "title": "no\n\t\t",
-      "imageSrc": "no_16959.png",
-      "imageAlt": "red x mark",
-      "cssClass": "red"
     },
     {
       "id": "75",
@@ -565,33 +593,5 @@ let dataList = [
       "imageSrc": "Work_32615.png",
       "imageAlt": "hands working",
       "cssClass": "darkGreen"
-    },
-    {
-      "id": "82",
-      "title": "out",
-      "imageSrc": "Garbage%20Bag%20Out_40186.png",
-      "imageAlt": "garbage bag being taken out",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "83",
-      "title": "down",
-      "imageSrc": "Down%20Arrow_38048.png",
-      "imageAlt": "arrow pointing down",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "84",
-      "title": "with",
-      "imageSrc": "Carry_33621.png",
-      "imageAlt": "image showing carrying something with you",
-      "cssClass": "skyBlue"
-    },
-    {
-      "id": "85",
-      "title": "are",
-      "imageSrc": "transparent.svg",
-      "imageAlt": "image showing carrying something with you",
-      "cssClass": "skyBlue"
     }
   ]
