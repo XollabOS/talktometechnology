@@ -12,7 +12,7 @@ function MakeNewUtterance(boxNumber, utteranceWord, imgSrc, bgColor, altText) {
       };
     };
     
-    let boxSpitter = "<button class='" + bgColor +"' id='box-" + boxNumber + "'><h2>" + utteranceWord + "</h2><img src='../img/" + imgSrc + "' alt='"+ altText +"'></button>";
+    let boxSpitter = "<section class='boxTemplate " + bgColor +"'id='box-" + boxNumber + "'><h2>" + utteranceWord + "</h2><img src='../img/" + imgSrc + "' alt='"+ altText +"'></section>";
     document.getElementById('mainContainer').insertAdjacentHTML("beforeend", boxSpitter);
     //  "<button id='box-" + boxNumber + "'></button>";
      
@@ -27,14 +27,21 @@ function MakeNewUtterance(boxNumber, utteranceWord, imgSrc, bgColor, altText) {
   }
   
   const synth = window.speechSynthesis;
-document.querySelector("#run").addEventListener("click", run);
+document.querySelector("#submitText").addEventListener("click", run);
+
+document.querySelector('#keyboard').addEventListener('keydown', e => {
+  if (e.keyCode == 13) {
+    e.preventDefault()
+    return run()
+  }
+});
 
 function run() {
   const typeToTalk = document.querySelector("#keyboard").value;
 
   const yellText = `${typeToTalk}`;
 
-  document.querySelector("#placeToYell").innerText = yellText;
+  document.querySelector("#keyboard").innerText = yellText;
 
   let yellThis = new SpeechSynthesisUtterance(yellText);
 

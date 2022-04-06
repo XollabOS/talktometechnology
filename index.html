@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<meta name="description" content="Open source comm board for all!">
     	<meta name="keywords" content="communication, accessibility, open source">
 		<!----google fonts-->
@@ -16,18 +18,18 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 <body>
+	<h1>Talk to me Technology</h1>
     <section id="mainContainer">
 
 
     </section>
-	<div class="container-8">
+	<section class="customInputWrapper">
 		<form id="iSaid">
-			<label id="placeToYell">Type Here: </label>
-			<input id="keyboard" type="text" placeholder ="  ">
+			<label id="customInputLabel" for="keyboard">Type Here: </label>
+			<input id="keyboard" type="text" placeholder ="Example: I want to go to the park.">
 		</form>
-		<button id="run" type="button" name="Say Out Loud">
-		<h2 id="run">Submit</h2>
-		</div>
+		<a id="submitText">Submit</a>
+	</section>
 	<script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
 </body>
