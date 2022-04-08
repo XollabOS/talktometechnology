@@ -101,8 +101,8 @@ h1, h2, h3{
 
 /*------------------images----------------------*/
 img{
-  height:8vh;
-  width:8vh;
+  height: 5rem;
+  width: auto;
 }
 
 /*-------typing input container and style----*/
@@ -162,8 +162,8 @@ img{
         height: 10rem;
       }
       img {
-        height: 4vh;
-        width: 4vh;
+        height: 3.5rem;
+        width: auto;
       }
       h2 {
         font-size: 2rem;
