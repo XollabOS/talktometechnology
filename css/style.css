@@ -36,8 +36,11 @@ html{
 /*******************************************/
 
 
-h1, h2, h3{
+h1, h2, h3, p{
   text-align: center;
+}
+p {
+  font-size: 2rem;
 }
 
 #mainContainer{
@@ -165,7 +168,7 @@ img{
         height: 3.5rem;
         width: auto;
       }
-      h2 {
+      p {
         font-size: 2rem;
       }
       #customInputLabel{

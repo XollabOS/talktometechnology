@@ -3,14 +3,14 @@ let dataList = [
     "id": "1",
     "title": "I",
     "imageSrc": "I_23542.png",
-    "imageAlt": "picture pointing at self",
+    "imageAlt": "pointing at self",
     "cssClass": "yellow"
   },
   {
     "id": "2",
     "title": "me",
     "imageSrc": "face_15743.png",
-    "imageAlt": "picture of person",
+    "imageAlt": "person",
     "cssClass": "yellow"
   },
   {
@@ -45,21 +45,21 @@ let dataList = [
       "id": "3",
       "title": "how",
       "imageSrc": "How__14819.png",
-      "imageAlt": "picture of a question mark",
+      "imageAlt": "question mark",
       "cssClass": "purple"
     },
     {
       "id": "4",
       "title": "who",
       "imageSrc": "who_14192.png",
-      "imageAlt": "picture of a question mark on a persons face",
+      "imageAlt": "question mark on a persons face",
       "cssClass": "purple"
     },
     {
       "id": "5",
       "title": "why",
       "imageSrc": "why_46802.png",
-      "imageAlt": "picture of a person asking why",
+      "imageAlt": "person asking why",
       "cssClass": "purple"
     },
     {
@@ -80,7 +80,7 @@ let dataList = [
       "id": "6",
       "title": "again",
       "imageSrc": "again_47245.png",
-      "imageAlt": "picture showing a loop going around again",
+      "imageAlt": "loop going around again",
       "cssClass": "skyBlue"
     },
     {
@@ -178,14 +178,14 @@ let dataList = [
       "id": "84",
       "title": "with",
       "imageSrc": "Carry_33621.png",
-      "imageAlt": "image showing carrying something with you",
+      "imageAlt": "a person carrying an object with them",
       "cssClass": "skyBlue"
     },
     {
       "id": "85",
       "title": "are",
       "imageSrc": "transparent.svg",
-      "imageAlt": "image showing carrying something with you",
+      "imageAlt": "arrow pointing to person",
       "cssClass": "skyBlue"
     },
     {
@@ -199,7 +199,7 @@ let dataList = [
       "id": "7",
       "title": "please",
       "imageSrc": "Palms%20Up%20Together_41055.svg",
-      "imageAlt": "picture showing hands in a please position",
+      "imageAlt": "hands in a please position",
       "cssClass": "lightPink"
     },
     {
@@ -276,7 +276,7 @@ let dataList = [
       "id": "24",
       "title": "cool",
       "imageSrc": "ice_17807.png",
-      "imageAlt": "ice cube image",
+      "imageAlt": "ice cube",
       "cssClass": "lightPink"
     },
     {
@@ -297,14 +297,14 @@ let dataList = [
       "id": "11",
       "title": "bad",
       "imageSrc": "bad_16939.png",
-      "imageAlt": "picture of a thumb pointing down",
+      "imageAlt": "thumb pointing down",
       "cssClass": "darkPink"
     },
     {
       "id": "12",
       "title": "good",
       "imageSrc": "Thumbs%20Up_41001.svg",
-      "imageAlt": "picture of a thumb pointing up",
+      "imageAlt": "thumb pointing up",
       "cssClass": "darkPink"
     },
     {
@@ -360,7 +360,7 @@ let dataList = [
       "id": "16",
       "title": "be",
       "imageSrc": "be_46567.png",
-      "imageAlt": "picture pointing at self",
+      "imageAlt": "pointing at self",
       "cssClass": "darkGreen"
     },
     {
