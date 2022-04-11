@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cahllagerfeld/talktometechnology.git"
+    "url": "git+https://github.com/XollabOS/talktometechnology.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Cahllagerfeld/talktometechnology/issues"
+    "url": "https://github.com/XollabOS/talktometechnology/issues"
   },
-  "homepage": "https://github.com/Cahllagerfeld/talktometechnology#readme",
+  "homepage": "https://github.com/XollabOS/talktometechnology#readme",
   "devDependencies": {
     "parcel": "^2.4.1",
     "parcel-reporter-static-files-copy": "^1.3.4"
