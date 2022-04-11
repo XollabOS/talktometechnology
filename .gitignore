@@ -1,3 +1,6 @@
 oldmaincode.js
 oldtestcode.js
 backup.html
+dist
+.parcel-cache
+node_modules

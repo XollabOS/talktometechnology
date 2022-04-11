@@ -1,0 +1,23 @@
+{
+  "name": "talktometechnology",
+  "version": "0.1.0",
+  "description": "Talk to me technology is a open source communication board to give access to every person who needs assistance with verbal communcation.",
+  "scripts": {
+    "dev": "parcel serve index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cahllagerfeld/talktometechnology.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cahllagerfeld/talktometechnology/issues"
+  },
+  "homepage": "https://github.com/Cahllagerfeld/talktometechnology#readme",
+  "devDependencies": {
+    "parcel": "^2.4.1",
+    "parcel-reporter-static-files-copy": "^1.3.4"
+  }
+}
