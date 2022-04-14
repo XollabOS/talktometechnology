@@ -35,5 +35,6 @@ dist/
 # Dependency directories
 node_modules/
 
-
+# Replit
+.replit
 
