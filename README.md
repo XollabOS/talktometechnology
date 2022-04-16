@@ -4,14 +4,15 @@ Talk to me technology is a open source communication board to give access to eve
 
 ## Color Scheme:
 This communication board uses the Fitzgerald Key Groups parts of speech. The key assigns colors to different parts of speech to make it easier to find the right king of word:
-Blue: adjectives
-Green: verbs
-Yellow: pronouns
-Orange: nouns
-White: conjunctions
-Pink: questions
-Brown: adverbs
-Red: important function words, negation, emergency words. 
+
+Blue: adjectives  
+Green: verbs  
+Yellow: pronouns  
+Orange: nouns  
+White: conjunctions  
+Pink: questions  
+Brown: adverbs  
+Red: important function words, negation, emergency words   
 
 ## Deployed Version Screenshot.
 ![Animated overview](https://user-images.githubusercontent.com/76171953/162774535-fd5d0859-95f3-433b-8f9f-00c33b5d2229.gif)
