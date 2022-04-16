@@ -457,7 +457,7 @@ let dataList = [
     {
       "id": "45",
       "title": "need",
-      "imageSrc": "I%20need%20help_6403.png",
+      "imageSrc": "can%20I%20help%20you__19233.png",
       "imageAlt": "sign language need help",
       "cssClass": "darkGreen"
     },
@@ -471,7 +471,7 @@ let dataList = [
     {
       "id": "52",
       "title": "help",
-      "imageSrc": "can%20I%20help%20you__19233.png",
+      "imageSrc": "I%20need%20help_6403.png",
       "imageAlt": "reaching out for help",
       "cssClass": "darkGreen"
     },

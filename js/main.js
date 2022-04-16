@@ -12,7 +12,8 @@ function MakeNewUtterance(boxNumber, utteranceWord, imgSrc, bgColor, altText) {
       };
     };
     
-    let boxSpitter = "<button class='boxTemplate " + bgColor +"'id='box-" + boxNumber + "'><p>" + utteranceWord.toUpperCase() + "</p><img src='../img/" + imgSrc + "' alt='"+ altText +"'></button>";
+    let boxSpitter = 
+    "<button class='boxTemplate " + bgColor +"'id='box-" + boxNumber + "'> <p>" + utteranceWord.toUpperCase() + "</p><img src='../img/" + imgSrc + "' alt='"+ altText +"'></button>";
     document.getElementById('mainContainer').insertAdjacentHTML("beforeend", boxSpitter);
     //  "<button id='box-" + boxNumber + "'></button>";
      
