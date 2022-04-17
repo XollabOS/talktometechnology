@@ -92,6 +92,6 @@ function run() {
   document.querySelector("#keyboard").innerText = yellText;
 
   let yellThis = new SpeechSynthesisUtterance(yellText);
-
+  yellThis.voice = voice
   synth.speak(yellThis);
 }
