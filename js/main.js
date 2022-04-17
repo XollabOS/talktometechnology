@@ -46,6 +46,7 @@ function MakeNewUtterance(boxNumber, utteranceWord, imgSrc, bgColor, altText) {
     } else {
       // start new utterance
       const utterance = new SpeechSynthesisUtterance(utteranceWord);
+      // set utterance to global 
       utterance.voice = voice
       this.synth1.speak(utterance);
     };
@@ -90,8 +91,9 @@ function run() {
   const yellText = `${typeToTalk}`;
 
   document.querySelector("#keyboard").innerText = yellText;
-
+  // set yellThis to the global
   let yellThis = new SpeechSynthesisUtterance(yellText);
   yellThis.voice = voice
+
   synth.speak(yellThis);
 }
