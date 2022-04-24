@@ -58,7 +58,7 @@
     function run() {
         const typeToTalk = keyboard.value;
         const yellText = `${typeToTalk}`;
-        keyboard.querySelector("#keyboard").value = null;
+        keyboard.value = null;
         speak(yellText);
     }
 })();
