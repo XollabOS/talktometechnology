@@ -108,6 +108,7 @@ img{
   width: auto;
 }
 
+
 /*-------typing input container and style----*/
 
 
@@ -148,6 +149,7 @@ img{
   width: 10%;
   height: 3rem;
   margin: 0 auto 2rem auto;
+  border: none;
 }
 #submitText:hover {
   cursor: pointer;
