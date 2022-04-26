@@ -37,3 +37,6 @@ node_modules/
 
 # Replit
 .replit
+
+# Settings
+.idea/
