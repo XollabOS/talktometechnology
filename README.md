@@ -25,6 +25,43 @@ This communication board uses the Fitzgerald Key Groups parts of speech. The key
 | Brown  | adverbs      |
 | Red    | important function words, negation, emergency words |
 
+# ✨ Product Roadmap 
+
+* Vision:
+  To build an open source communication board to give access to every person who needs assistance with verbal communication
+
+* Goals:
+The goal of this project is to eliminate economic barriers and paywalls for those who require the assistive technology 
+
+* Timeframe:
+The project will have feature based iterations that will be released throughout the build process
+
+
+* Feature-User journey:
+1. Signup for an account
+2. Edit and customize their profiles enabling the user to create custom communication boards
+3. Display the links to all their social media handles and their other websites
+4 Get information about visits to their profiles and clicks to their links
+5 Get details of visitors for a mailing list
+6 A social-fi feature on the app where users can communicate via sms as well as use to make phone calls
+7 Switching on and deactivating accounts
+8 Suggest features and report bugs
+9. Change pins and passwords
+
+# ✨Future Features:
+
+* Dashboard to check analytics like clicks, the click through rate (CTR), total view of the profile and activities.
+
+* Editor: Can be used for customization - to change themes & modes; to edit links, & profile information, add or remove elements etc
+
+* Payment feature: There’s no payment features as it will be accessible free for all users
+
+* Feedback: To report bugs, to suggest additional features
+
+* Tips card: to offer tips on how to navigate the platform easily.
+
+* Personalization feature: that allows users to indicate their areas of specialty and specializations to help model the look and feel of their space or profile on the web app
+
 ## Setup
 
 The repository uses static HTML/JavaScript files which can be cloned and served by a webserver.
