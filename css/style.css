@@ -57,6 +57,7 @@ h1, h2, h3, p{
   display: grid;
   place-items: center;
   grid-template-rows: 1fr 1fr;
+  padding: 0;
 }
 .boxTemplate p {
   font-size: clamp(1.8rem, 1.8vw, 3rem);
