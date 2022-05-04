@@ -201,7 +201,7 @@ img{
         grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* 5 cards */
       }
       .boxTemplate p {
-        font-size: clamp(1.5rem, 2vw, 2rem);
+        font-size: clamp(1.5rem, 3.5vw, 3rem);
       }
       #keyboard {
         width: 60%;
@@ -218,7 +218,7 @@ img{
         grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)); /* 4 cards */
       }
       .boxTemplate p {
-        font-size: clamp(1.25rem, 4vw, 2.5rem);
+        font-size: clamp(1.25rem, 4.5vw, 2.5rem);
       }
       #keyboard {
         width: 80%;
