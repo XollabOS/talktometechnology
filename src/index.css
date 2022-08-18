@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -56,6 +60,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -67,4 +76,16 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#root {
+  /*max-width: 1920px;*/
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
 }

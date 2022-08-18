@@ -6,11 +6,12 @@ import {joinClassNames} from "../../helpers/JSXClassName";
  * Creates buttons that speaks when clicked.
  *
  * @param {string} props.title The word/phrase that you want to add to the button.
- * @param {string} props.imageID The ID of the image that describes the phrase.
+ * @param {string} props.imageSrc The source of the image that describes the phrase.
  * @param {string} props.imageAlt The alt tag of the image that describes the phrase.
  * @param {string} props.color Extra customization that changes the appearance of the button
  *
- * @returns {React.ReactElement} The button that speaks the phrase when clicked.
+ * @returns {JSX.Element} The button that speaks the phrase when clicked.
+ * @constructor
  * */
 export default function SpeakButton(props) {
     const buttonClasses = [
@@ -22,6 +23,6 @@ export default function SpeakButton(props) {
         audio.speak(props.title)}
     }>
         <span className={classes.description}>{props.title}</span>
-        <img className={classes.image} src={`/assets/images/${props.imageID}`}></img>
+        <img className={classes.image} src={`/assets/images/${props.imageSrc}`} alt={props.imageAlt}></img>
     </button>;
 }

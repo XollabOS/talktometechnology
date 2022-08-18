@@ -17,9 +17,9 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(cors());
 
-let PORT = process.env.PORT || 5000;
+let PORT = process.env.PORT || process.env.PORT_DEVELOPMENT;
 if (process.env.MODE !== "production") {
-    PORT = 5000;
+    PORT = process.env.PORT_DEVELOPMENT;
     app.use(morgan("dev"));
 }
 

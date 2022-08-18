@@ -4,6 +4,7 @@
 
 .yellow {
     background: yellow;
+    color: black;
 }
 
 .purple {
@@ -12,5 +13,45 @@
 
 .white {
     background: white;
+    color: black;
 }
 
+.lightGreen {
+    color: black;
+}
+
+.skyBlue {
+    color: black;
+}
+
+.lightPink {
+    color: black;
+}
+
+.button {
+    aspect-ratio: 1/1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    border: 1px solid;
+    padding: 0.5em;
+    row-gap: 0.5em;
+}
+
+.button span {
+    font-size: 0.5em;
+}
+
+.image {
+    width: 3em;
+}
+
+@media only all and (min-width: 1280px) {
+    .button {
+        font-size: 1.75rem;
+    }
+}
