@@ -1,0 +1,35 @@
+{
+  "name": "talktometechnology",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "cross-env MODE=production node index.js",
+    "dev-server": "cross-env MODE=development nodemon index.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev-database": "(if not exist database mkdir database) && mongod --port 8888 --dbpath ./database"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "materialize-css": "^1.0.0",
+    "mongoose": "^6.5.2",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "vite": "^3.0.7"
+  }
+}

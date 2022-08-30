@@ -1,0 +1,35 @@
+.btnGrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+}
+
+.btnGrid li {
+    width: 100%;
+    display: flex;
+}
+
+@media only all and (min-width: 640px) {
+    .btnGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only all and (min-width: 1024px) {
+    .btnGrid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media only all and (min-width: 1280px) {
+    .btnGrid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media only all and (min-width: 1500px) {
+    .btnGrid {
+        grid-template-columns: repeat(10, 1fr);
+    }
+}

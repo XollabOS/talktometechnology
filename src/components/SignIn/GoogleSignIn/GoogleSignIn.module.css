@@ -1,0 +1,6 @@
+.signInButton {
+    display: flex;
+    column-gap: 0.5em;
+    align-items: center;
+    text-transform: none;
+}
