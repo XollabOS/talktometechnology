@@ -15,7 +15,7 @@ export default function SpeakGrid() {
         return JSON.parse(localStorage.getItem("configuration") ?? "[]");
     });
     React.useEffect(function () {
-        api.getJSON("/api/main/configuration").then(result => {
+        api.getJSON("/api/configuration").then(result => {
             const newConfig = result.data;
             setButtonConfiguration(newConfig);
             localStorage.setItem("configuration", JSON.stringify(newConfig));

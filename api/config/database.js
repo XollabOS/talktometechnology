@@ -1,10 +1,19 @@
 const mongoose = require("mongoose");
 
-let mongoClient;
+let database = new mongoose.Mongoose();
+let dbname = "userdata";
+let parameters = "?retryWrites=true&w=majority";
+let dbConnectionString;
+
 if (process.env.MODE === "production") {
-    mongoClient = mongoose.createConnection(process.env.MONGODB_URI_PRODUCTION);
+    dbConnectionString = process.env.MONGODB_URI_PRODUCTION + dbname + parameters;
 } else {
-    mongoClient = mongoose.createConnection(process.env.MONGODB_URI_DEVELOPMENT);
+    dbConnectionString = process.env.MONGODB_URI_DEVELOPMENT + dbname + parameters;
 }
 
-module.exports = mongoClient;
+database.connect(dbConnectionString);
+
+module.exports = {
+    database,
+    dbConnectionString
+};

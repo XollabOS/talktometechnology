@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem
+}
+
+.authButton {
+    background: var(--accent-dark);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-weight: 600;
+}

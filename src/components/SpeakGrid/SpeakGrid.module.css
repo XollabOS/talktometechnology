@@ -1,8 +1,10 @@
 .btnGrid {
     display: grid;
-    width: 100%;
+    width: fit-content;
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
+    justify-items: stretch;
+    margin-inline: auto;
 }
 
 .btnGrid li {

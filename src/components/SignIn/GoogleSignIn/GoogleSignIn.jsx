@@ -6,7 +6,7 @@ import React from "react";
  * @constructor
  */
 export default function GoogleSignIn() {
-    return <a className={`btn btn-block blue ${classes.signInButton}`} href={"/api/auth/login/google"}>
+    return <a className={`btn btn-block blue ${classes.signInButton}`} href={"/api/auth/google"}>
         <i className="fa-brands fa-google"></i>Sign in with Google
     </a>;
 }

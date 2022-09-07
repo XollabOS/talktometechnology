@@ -37,7 +37,7 @@ Follow the instructions with [local](README.md#local-environment) or [container]
 
 ## Languages and style guide
 
-The project currently uses static files to render the content, and run client-side JavaScript.  HTML, JavaScript and CSS knowledge is recommended for code contributions.
+The project currently uses static files to render the content, and run database-side JavaScript.  HTML, JavaScript and CSS knowledge is recommended for code contributions.
 
 Please follow the existing code style, and avoid changes in Pull Requests, for example indent changes.
 
