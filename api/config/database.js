@@ -11,7 +11,10 @@ if (process.env.MODE === "production") {
     dbConnectionString = process.env.MONGODB_URI_DEVELOPMENT + dbname + parameters;
 }
 
-database.connect(dbConnectionString);
+database.connect(dbConnectionString).catch(e => {
+    console.log(e.message);
+    process.exit();
+});
 
 module.exports = {
     database,

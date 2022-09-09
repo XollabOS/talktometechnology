@@ -36,7 +36,6 @@ function addAuthorization(expressApp) {
         } catch (e) {
             error = e;
         }
-        console.log("Deserializing...");
         done(error, user);
     });
 }

@@ -24,7 +24,7 @@ addAuthorization(app);
 let PORT = process.env.PORT || process.env.PORT_DEVELOPMENT;
 if (process.env.MODE !== "production") {
     PORT = process.env.PORT_DEVELOPMENT;
-    app.use(morgan("dev"));
+    // app.use(morgan("dev"));
 }
 
 app.listen(PORT, () => {

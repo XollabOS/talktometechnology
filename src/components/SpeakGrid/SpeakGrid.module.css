@@ -5,6 +5,7 @@
     align-items: stretch;
     justify-items: stretch;
     margin-inline: auto;
+    grid-gap: 0.5rem;
 }
 
 .btnGrid li {
