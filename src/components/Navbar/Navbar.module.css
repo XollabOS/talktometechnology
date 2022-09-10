@@ -20,7 +20,7 @@
 .button:hover, .button:focus, .button:active {
     background: var(--secondary);
     color: var(--primary);
-    border-color: #0005;
+    border-color: var(--primary-translucent);
 }
 
 .profilePicture {

@@ -8,7 +8,7 @@
  * allowing it to speak again immediately instead of having a considerable delay between speeches.
  * If false and the synthesizer is already speaking, the function call will have no effect.
  */
-function speak(phrase, forceStop = true) {
+export function speak(phrase, forceStop = true) {
     const utterance = new SpeechSynthesisUtterance(phrase);
     if (forceStop) {
         speechSynthesis.cancel();
@@ -17,5 +17,3 @@ function speak(phrase, forceStop = true) {
         speechSynthesis.speak(utterance);
     }
 }
-
-export {speak};

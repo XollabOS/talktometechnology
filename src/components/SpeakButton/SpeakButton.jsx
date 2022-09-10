@@ -18,7 +18,6 @@ export default function SpeakButton(props) {
         classes[props.color],
         classes.button,
     ];
-    // console.log(buttonClasses);
     return <button style={{background: props.color.toLowerCase()}} className={joinClassNames(buttonClasses)} onClick={() => {
         audio.speak(props.title)}
     }>

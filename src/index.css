@@ -17,6 +17,7 @@
   -webkit-text-size-adjust: 100%;
   --primary: black;
   --secondary: #efefef;
+  --primary-translucent: #0006;
   --accent-2: white;
   --accent-1: #646cff;
 }
@@ -38,6 +39,11 @@ body {
 h1 {
   font-size: 2em;
   line-height: 1.1;
+  margin-block: 0;
+}
+
+h2 {
+  font-size: 1.5em;
   margin-block: 0;
 }
 
@@ -76,4 +82,12 @@ img {
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: white;
+    --secondary: black;
+    --primary-translucent: #fff6;
+  }
 }

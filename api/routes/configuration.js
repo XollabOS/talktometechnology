@@ -8,9 +8,10 @@ router.get("/", async (req, res) => {
     try {
         const user = await (req.user);
         if (!user || !req.isAuthenticated?.()) {
-            // console.log("Public/default configuration.");
             respondWithObject(res, defaultConfiguration);
         } else {
+            // Temporary.
+            respondWithObject(res, defaultConfiguration);
             // console.log("Personal configuration.");
         }
     } catch (e) {

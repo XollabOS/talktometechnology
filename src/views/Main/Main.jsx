@@ -1,12 +1,13 @@
 import SpeakGrid from "../../components/SpeakGrid/SpeakGrid";
-import {AuthWrapper} from "../../components/AuthContext/AuthContext";
 import Navbar from "../../components/Navbar/Navbar";
+import {Outlet} from "react-router-dom";
 
 function Main() {
-    return <AuthWrapper>
+    return <div>
         <Navbar></Navbar>
         <SpeakGrid></SpeakGrid>
-    </AuthWrapper>
+        <Outlet></Outlet>
+    </div>
 }
 
 export default Main;

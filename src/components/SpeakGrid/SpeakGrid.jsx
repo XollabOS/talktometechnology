@@ -14,13 +14,16 @@ export default function SpeakGrid() {
     const [buttonConfiguration, setButtonConfiguration] = React.useState(() => {
         return JSON.parse(localStorage.getItem("configuration") ?? "[]");
     });
+
     React.useEffect(function () {
+        console.log("Speak board reactivated.");
         api.getJSON("/api/configuration").then(result => {
             const newConfig = result.data;
             setButtonConfiguration(newConfig);
             localStorage.setItem("configuration", JSON.stringify(newConfig));
         });
     }, []);
+
     if (!buttonConfiguration.length) {
         return <ul className={classes.btnGrid}></ul>;
     } else {
