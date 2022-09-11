@@ -39,7 +39,7 @@
     box-sizing: border-box !important;
     padding: 0.5rem !important;
     border-bottom: revert !important;
-    margin-block: 0.5rem !important;
+    margin-block: 0.25rem !important;
     border: 0.15em solid var(--primary-translucent) !important;
     border-radius: 0.5em !important;
     display: block !important;
@@ -56,7 +56,6 @@
     display: flex;
     column-gap: 0.5rem;
     align-items: center;
-    margin-block: 0.5rem;
     margin-left: 0.5rem;
     font-weight: 600;
 }
@@ -82,4 +81,33 @@
     justify-content: center;
     align-items: center;
     padding: 0.25em;
+}
+
+.disabled::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-translucent);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.colorInput {
+    box-sizing: border-box !important;
+    border-bottom: revert !important;
+    margin-block: 0.25rem !important;
+    border: 0.15em solid var(--primary-translucent) !important;
+    border-radius: 0.5em !important;
+    display: block !important;
+    height: 2.5rem;
+    width: 100%;
 }

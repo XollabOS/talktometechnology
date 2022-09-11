@@ -1,7 +1,6 @@
 // Environment setup.
 const dotenv = require("dotenv");
 const path = require("path");
-const morgan = require("morgan");
 dotenv.config({path: path.join(__dirname, "config.env")});
 
 // Database setup.
@@ -24,7 +23,6 @@ addAuthorization(app);
 let PORT = process.env.PORT || process.env.PORT_DEVELOPMENT;
 if (process.env.MODE !== "production") {
     PORT = process.env.PORT_DEVELOPMENT;
-    // app.use(morgan("dev"));
 }
 
 app.listen(PORT, () => {

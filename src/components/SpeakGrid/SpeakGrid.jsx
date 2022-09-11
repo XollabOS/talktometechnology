@@ -2,6 +2,7 @@ import React from "react";
 import * as api from "../../helpers/api";
 import SpeakButton from "../SpeakButton/SpeakButton";
 import classes from "./SpeakGrid.module.css";
+import {ButtonConfigurationContext} from "../../contexts/ButtonConfigurationContext";
 
 /**
  * Creates a grid of speech buttons.
@@ -11,18 +12,8 @@ import classes from "./SpeakGrid.module.css";
  * @constructor
  */
 export default function SpeakGrid() {
-    const [buttonConfiguration, setButtonConfiguration] = React.useState(() => {
-        return JSON.parse(localStorage.getItem("configuration") ?? "[]");
-    });
-
-    React.useEffect(function () {
-        console.log("Speak board reactivated.");
-        api.getJSON("/api/configuration").then(result => {
-            const newConfig = result.data;
-            setButtonConfiguration(newConfig);
-            localStorage.setItem("configuration", JSON.stringify(newConfig));
-        });
-    }, []);
+    const buttonConfigurationData = React.useContext(ButtonConfigurationContext);
+    const {buttonConfiguration} = buttonConfigurationData;
 
     if (!buttonConfiguration.length) {
         return <ul className={classes.btnGrid}></ul>;
