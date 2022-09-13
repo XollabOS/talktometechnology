@@ -1,4 +1,3 @@
-const http = require("http");
 /**
  * Responds to an HTTP request as JSON with code 200 and an object, stating that the request has succeeded.
  * @param {http.ServerResponse} response The response object to be handled.

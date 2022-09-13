@@ -4,7 +4,7 @@ const path = require("path");
 dotenv.config({path: path.join(__dirname, "config.env")});
 
 // Database setup.
-const database = require("./database").database;
+require("./database");
 console.log("Connecting to MongoDB server.");
 
 // Servers and middlewares.
