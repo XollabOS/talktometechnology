@@ -29,14 +29,16 @@ function addAuthorization(expressApp) {
         console.log(user._id);
         done(null, user._id);
     });
-    passport.deserializeUser(async (id, done) => {
-        let user, error = null;
-        try {
-            user = await Users.findById(id);
-        } catch (e) {
-            error = e;
-        }
-        done(error, user);
+    passport.deserializeUser((id, done) => {
+        void async function() {
+            let user, error = null;
+            try {
+                user = await Users.findById(id);
+            } catch (e) {
+                error = e;
+            }
+            done(error, user);
+        }();
     });
 }
 

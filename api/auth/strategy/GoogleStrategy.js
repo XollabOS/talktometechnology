@@ -1,5 +1,6 @@
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const User = require("../../models/User");
+const defaultHelpers = require("../../serverHelpers/defaultsHelpers");
 
 const googleStrategy = new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
@@ -27,6 +28,7 @@ async function authCallback(accessToken, refreshToken, profile, done) {
                 }
             });
             await newUser.save();
+            await defaultHelpers.loadButtonDefaultsForNewUser(newUser._id.toString());
             done(null, newUser);
         }
     } catch (e) {

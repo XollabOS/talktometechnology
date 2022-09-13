@@ -17,12 +17,14 @@ function respondWithObject(response, object) {
  * @param {number} code The HTTP response code you want to use.
  * @param {http.ServerResponse} response The response object to be handled.
  * @param {Error} error The error for debugging.
+ * @param {string} reason The message to be sent to the user.
  * */
-function respondWithFailure(response, code, error) {
+function respondWithFailure(response, {code=500, error, reason="Internal server error."}) {
     if (error) console.error(error);
     response.status(code).json({
         success: false,
         code,
+        reason
     });
 }
 

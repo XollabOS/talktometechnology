@@ -9,7 +9,9 @@ export const ButtonConfigurationContext = React.createContext({
 
 export function ButtonConfigurationWrapper(props) {
     const [buttonConfiguration, setButtonConfiguration] = React.useState(() => {
-        return JSON.parse(localStorage.getItem("configuration") ?? "[]");
+        // TODO: Waiting for CI, functionality temporarily disabled.
+        // return JSON.parse(localStorage.getItem("configuration") ?? "[]");
+        return [];
     });
 
     function refreshConfiguration() {

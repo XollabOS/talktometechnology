@@ -12,7 +12,9 @@ export default function AddConfigurationModal() {
     const buttonConfigurationData = React.useContext(ButtonConfigurationContext);
     const titleRef = React.useRef(null);
     const imageRef = React.useRef(null);
-    const colorRef = React.useRef(null);
+    const imageAltRef = React.useRef(null);
+    const bgColorRef = React.useRef(null);
+    const textColorRef = React.useRef(null);
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -21,7 +23,9 @@ export default function AddConfigurationModal() {
             const success = await buttonConfigurationData.addNewButton({
                 title: titleRef.current.value,
                 image: imageRef.current.files[0],
-                color: colorRef.current.value,
+                bgColor: bgColorRef.current.value,
+                textColor: textColorRef.current.value,
+                imageAlt: imageAltRef.current.value,
             });
             if (success) {
                 navigate("..");
@@ -45,11 +49,19 @@ export default function AddConfigurationModal() {
                 </label>
                 <label>
                     <span className={classes.formLabel}><i className="fa-solid fa-image"></i>Word image</span>
-                    <input required={true} placeholder="What do you want to speak?" type={"file"} className={classes.textInput} ref={imageRef}/>
+                    <input required={true} type={"file"} className={classes.textInput} ref={imageRef}/>
+                </label>
+                <label>
+                    <span className={classes.formLabel}><i className="fa-solid fa-image"></i>Image description</span>
+                    <input placeholder="Describe the image." type={"text"} className={classes.textInput} ref={imageAltRef}/>
                 </label>
                 <label>
                     <span className={classes.formLabel}><i className="fa-solid fa-palette"></i>Button color</span>
-                    <input required={true} placeholder="What do you want to speak?" type={"color"} className={classes.colorInput} defaultValue={"#ff0000"} ref={colorRef}/>
+                    <input required={true} type={"color"} className={classes.colorInput} defaultValue={"#ffffff"} ref={bgColorRef}/>
+                </label>
+                <label>
+                    <span className={classes.formLabel}><i className="fa-solid fa-palette"></i>Button text color</span>
+                    <input required={true} type={"color"} className={classes.colorInput} defaultValue={"#000000"} ref={textColorRef}/>
                 </label>
                 <input value="Add a button" type="submit" className={classes.button}/>
             </form>

@@ -1,7 +1,7 @@
 let multer = require("multer");
 let path = require("path");
 
-const VALID_EXT_NAMES = [".png", ".jpeg", ".jpg"];
+const VALID_EXT_NAMES = [".png", ".jpeg", ".jpg", ".svg"];
 const MAX_MEGABYTES_ALLOWED = 5;
 
 module.exports = multer({
