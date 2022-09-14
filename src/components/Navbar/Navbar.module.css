@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    column-gap: 0.5rem;
+}
+
+.button {
+    background: var(--accent-1);
+    color: var(--accent-2);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    height: 2.5em;
+    font-weight: 600;
+    transition: background 0.25s linear, color 0.25s linear, border-color 0.25s linear;
+    border: 0.15em solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelButton {
+    background: var(--accent-3);
+}
+
+.button:hover, .button:focus, .button:active {
+    background: var(--secondary);
+    color: var(--primary);
+    border-color: var(--primary-translucent);
+}
+
+.profilePicture {
+    display: block;
+    width: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.25em #0005;
+}
+
+.welcomeMessage {
+    flex: 1;
+    margin-left: 0.5rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.squareButton {
+    aspect-ratio: 1/1;
+}

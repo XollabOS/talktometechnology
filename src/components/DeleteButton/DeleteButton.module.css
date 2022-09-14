@@ -1,0 +1,17 @@
+.button {
+    color: var(--accent-2);
+    background: var(--accent-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-color: var(--primary-translucent);
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    transform: translate(20%, -20%);
+    padding: 0;
+}

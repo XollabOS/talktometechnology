@@ -1,0 +1,78 @@
+.darkGreen {
+    background: darkgreen;
+    color: white;
+}
+
+.yellow {
+    background: yellow;
+    color: black;
+}
+
+.purple {
+    background: purple;
+    color: white;
+}
+
+.white {
+    background: white;
+    color: black;
+}
+
+.lightGreen {
+    color: black;
+}
+
+.skyBlue {
+    color: black;
+}
+
+.lightPink {
+    color: black;
+}
+
+.lightPurple {
+    background: mediumpurple;
+}
+
+.darkPink {
+    background: #f899ab;
+}
+
+.button {
+    aspect-ratio: 1/1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    border: 3px solid #0005;
+    padding: 0.5em;
+    row-gap: 0.5em;
+    transition: border-color 0.2s ease;
+    outline: none;
+}
+
+.buttonContainer {
+    position: relative;
+}
+
+.button span {
+    font-size: 0.6em;
+}
+
+.image {
+    width: 3em;
+}
+
+@media only all and (min-width: 1280px) {
+    .button {
+        font-size: 1.75rem;
+    }
+}
+
+.button:active, .button:focus, .button:hover {
+    border-color: var(--accent-1);
+    outline: none;
+}
