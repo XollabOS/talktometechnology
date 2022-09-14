@@ -42,6 +42,7 @@ router.post("/button", multerUploader.single("image"), async (req, res) => {
         await UserButton.create({
             title: req.body.title,
             imageSrc: uploadResult.secure_url,
+            cloudinaryID: uploadResult.public_id,
             imageAlt: req.body.imageAlt,
             bgColor: req.body.bgColor,
             textColor: req.body.textColor,
@@ -64,7 +65,35 @@ router.post("/button", multerUploader.single("image"), async (req, res) => {
         } catch (e) {
         }
     }
-
 });
+
+router.delete("/button", async (req, res) => {
+    try {
+        const currentUser = req.user;
+        if (!currentUser) {
+            respondWithFailure(res, {
+                code: 403,
+                error: null,
+                reason: "You must be signed in to delete a custom button.",
+            });
+        }
+        const userButton = await UserButton.findOne({_id: req.body.id});
+        if (userButton.userID !== req.user._id.toString()) {
+            respondWithFailure(res, {
+                code: 403,
+                error: null,
+                reason: "This custom button belongs to another user, and you can't delete it.",
+            });
+        }
+        const assetIDToDelete = userButton.cloudinaryID;
+        if (assetIDToDelete) {
+            console.log(await cloudinary.uploader.destroy(assetIDToDelete));
+        }
+        await UserButton.remove({_id: req.body.id});
+        respondWithObject(res, {});
+    } catch (e) {
+        respondWithFailure(res);
+    }
+})
 
 module.exports = router;

@@ -26,6 +26,9 @@ const UserButtonSchema = new mongoose.Schema({
     userID: {
         type: String,
         required: true,
+    },
+    cloudinaryID: {
+        type: String,
     }
 });
 

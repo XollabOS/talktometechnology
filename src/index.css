@@ -19,6 +19,7 @@
   --secondary: #efefef;
   --primary-translucent: #0006;
   --secondary-translucent: #fff6;
+  --accent-3: #e33;
   --accent-2: white;
   --accent-1: #646cff;
 }
@@ -38,7 +39,7 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.1;
   margin-block: 0;
 }

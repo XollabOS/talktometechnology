@@ -15,6 +15,13 @@
     font-weight: 600;
     transition: background 0.25s linear, color 0.25s linear, border-color 0.25s linear;
     border: 0.15em solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelButton {
+    background: var(--accent-3);
 }
 
 .button:hover, .button:focus, .button:active {
@@ -38,6 +45,5 @@
 }
 
 .squareButton {
-    display: block;
     aspect-ratio: 1/1;
 }

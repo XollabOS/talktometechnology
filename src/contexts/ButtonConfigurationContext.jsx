@@ -5,6 +5,9 @@ export const ButtonConfigurationContext = React.createContext({
     buttonConfiguration: [],
     refreshConfiguration: undefined,
     insertNewButton: undefined,
+    deleteExistingButton: undefined,
+    editingMode: false,
+    setEditingMode: undefined,
 });
 
 export function ButtonConfigurationWrapper(props) {
@@ -13,6 +16,7 @@ export function ButtonConfigurationWrapper(props) {
         // return JSON.parse(localStorage.getItem("configuration") ?? "[]");
         return [];
     });
+    const [editingMode, setEditingMode] = React.useState(false);
 
     function refreshConfiguration() {
         api.getJSON("/api/configuration").then(result => {
@@ -28,11 +32,11 @@ export function ButtonConfigurationWrapper(props) {
             for (let [key, val] of Object.entries(newButtonInfo)) {
                 formData.append(key, val);
             }
-            const data = await (await fetch("/api/configuration/button", {
+            const result = await (await fetch("/api/configuration/button", {
                 method: "POST",
                 body: formData,
             })).json();
-            if (data.success) {
+            if (result.success) {
                 refreshConfiguration();
                 return true;
             } else {
@@ -44,12 +48,25 @@ export function ButtonConfigurationWrapper(props) {
         }
     }
 
+    async function deleteExistingButton(buttonID) {
+        try {
+            await api.sendJSON("/api/configuration/button", {id: buttonID},{
+                method: "DELETE",
+            });
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
     React.useEffect(refreshConfiguration, []);
 
     const contextObject = {
         buttonConfiguration,
         refreshConfiguration,
         addNewButton,
+        deleteExistingButton,
+        setEditingMode,
+        editingMode
     };
 
     return <ButtonConfigurationContext.Provider value={contextObject}>

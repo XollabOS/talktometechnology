@@ -18,7 +18,7 @@ function respondWithObject(response, object) {
  * @param {Error} error The error for debugging.
  * @param {string} reason The message to be sent to the user.
  * */
-function respondWithFailure(response, {code=500, error, reason="Internal server error."}) {
+function respondWithFailure(response, {code=500, error=undefined, reason="Internal server error."}) {
     if (error) console.error(error);
     response.status(code).json({
         success: false,

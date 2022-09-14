@@ -14,13 +14,11 @@ export default function SpeakGrid() {
     const {buttonConfiguration} = React.useContext(ButtonConfigurationContext);
 
     if (!buttonConfiguration.length) {
-        return <ul className={classes.btnGrid}></ul>;
+        return <section className={classes.btnGrid}></section>;
     } else {
-        const buttons = buttonConfiguration.map((button) => {
-            return <li key={button.id}>
-                <SpeakButton {...button}></SpeakButton>
-            </li>
+        const buttons = buttonConfiguration.map((button, index) => {
+            return <SpeakButton {...button} key={button._id || `__default__${index}`}></SpeakButton>
         });
-        return <ul className={classes.btnGrid}>{buttons}</ul>;
+        return <section className={classes.btnGrid}>{buttons}</section>;
     }
 }
