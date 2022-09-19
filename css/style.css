@@ -25,6 +25,7 @@ h1{
   font-style: italic;
   letter-spacing: 1px;
   font-size: 3rem;
+  padding: 0 2vw;
 }
 
 html{
@@ -39,19 +40,16 @@ html{
 h1, h2, h3, p{
   text-align: center;
 }
-p {
-  font-size: 2rem;
-}
 
 #mainContainer{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10%, 1fr)); /* 10 cards */
   justify-content: center;
+  padding: 0 2vw;
 }
 .boxTemplate {
   text-align: center;
   border: .1rem solid black;
-  flex-basis: 10%;
   height: 16rem;
   font-size: 1.6rem;
   border-radius: 5px;
@@ -59,6 +57,10 @@ p {
   display: grid;
   place-items: center;
   grid-template-rows: 1fr 1fr;
+  padding: 0;
+}
+.boxTemplate p {
+  font-size: clamp(1.8rem, 1.8vw, 3rem);
 }
 
 
@@ -163,9 +165,21 @@ img{
 /******************************************
 /* ADDITIONAL STYLES
 /********************************************/
-
-
+@media screen and (max-width: 1000px){
+  #mainContainer{
+    grid-template-columns: repeat(auto-fill, minmax(14%, 1fr)); /* 7 cards */
+  }
+  .boxTemplate{
+    height: 13rem;
+  }
+  .boxTemplate p {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+}
 @media screen and (max-width: 800px){
+      #mainContainer{
+        grid-template-columns: repeat(auto-fill, minmax(15%, 1fr)); /* 6 cards */
+      }
       .boxTemplate{
         height: 10rem;
       }
@@ -174,7 +188,7 @@ img{
         width: auto;
       }
       p {
-        font-size: 2rem;
+        font-size: clamp(1.8rem, 2.5vw, 3rem);
       }
       #customInputLabel{
         font-size: 3rem;
@@ -184,8 +198,11 @@ img{
       }
     }
     @media screen and (max-width: 600px) {
-      .boxTemplate {
-        flex-basis: 15%;
+      #mainContainer{
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); /* 5 cards */
+      }
+      .boxTemplate p {
+        font-size: clamp(1.5rem, 3.5vw, 3rem);
       }
       #keyboard {
         width: 60%;
@@ -199,12 +216,20 @@ img{
         width: 100%;
       }
       #mainContainer{
-        justify-content: space-around;
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)); /* 4 cards */
       }
-      .boxTemplate {
-        flex-basis: 23%;
+      .boxTemplate p {
+        font-size: clamp(1.25rem, 4.5vw, 2.5rem);
       }
       #keyboard {
         width: 80%;
       }
-}
+    }
+    @media screen and (max-width: 300px) {
+      #mainContainer{
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); /* 2 cards */
+      }
+      .boxTemplate p {
+        font-size: clamp(1rem, 8vw, 2.5rem);
+      }
+    }
